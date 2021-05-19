@@ -1,0 +1,11 @@
+.navbar-brand:hover {
+    letter-spacing: 0.2em;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar {
+    background-color: rgb(104, 11, 11);
+}
