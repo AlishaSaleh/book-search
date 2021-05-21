@@ -2,6 +2,11 @@
   font-family: 'Fira Sans', sans-serif;
 }
 
+body {
+  background-image: url('./images/pexels-stanislav-kondratiev-books.jpg');
+  background-size: cover;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
