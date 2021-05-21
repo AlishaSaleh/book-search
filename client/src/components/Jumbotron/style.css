@@ -1,0 +1,12 @@
+#head-shad {
+    text-shadow: 4px 4px #ffffff;
+    /* letter-spacing: 0.2em; */
+    color: #54627b;
+}
+#hero {
+    background-color: #ecd5bb;
+}
+
+.hero-text {
+    color: #54627b;
+}
