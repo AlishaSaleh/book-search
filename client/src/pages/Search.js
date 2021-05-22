@@ -21,18 +21,20 @@ class Search extends Component {
     };
 
     getBooks = () => {
+        console.log(this.state.q);
         API.getBooks(this.state.q)
-            .then(res =>
+            .then(res => { console.log(res.data) // no response returning
                 this.setState({
                     books: res.data
                 })
+            }
             )
             .catch(() =>
                 this.setState({
                     books: [],
                     message: "No books found!"
                 })
-            );
+            ); 
     };
 
     handleFormSubmit = event => {
@@ -46,7 +48,6 @@ class Search extends Component {
         API.saveBook({
             googleId: book.id,
             title: book.volumeInfo.title,
-            subtitle: book.volumeInfo.subtitle,
             link: book.volumeInfo.infoLink,
             authors: book.volumeInfo.authors,
             description: book.volumeInfo.description,
@@ -59,7 +60,7 @@ class Search extends Component {
             <>
                 <Jumbotron />
                 <div className="row justify-content-md-center">
-                    <div className="col-md-6">
+                    <div className="col-md-8">
                         <Card title="Book Search">
                             <Form
                                 handleInputChange={this.handleInputChange}
@@ -70,7 +71,7 @@ class Search extends Component {
                     </div>
                 </div>
                 <div className="row justify-content-md-center">
-                    <div className="col-md-6">
+                    <div className="col-md-8">
                         <Card title="Results">
                             {this.state.books.length ? (
                                 <List>

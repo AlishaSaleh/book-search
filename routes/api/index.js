@@ -9,6 +9,8 @@ router.use("/books", bookRoutes);
 // google route
 router.use("/google", googleRoutes);
 
+console.log("REACHED API ROUTES");
+
 // builds the react app if there are no API routes to hit
 router.use(function(req, res) {
   res.sendFile(path.join(__dirname, "../../client/build/index.html"));

@@ -1,9 +1,12 @@
 const axios = require("axios");
 const db = require("../models");
 
+console.log("REACHED CONTROLLER");
 module.exports = {
     findAll: async (req, res) => {
+        console.log("CONNECTED TO GOOGLE BOOKS");
         try {
+            
             const { query: params } = req;
             // Axios request to fetch books
             const results = await axios.get(

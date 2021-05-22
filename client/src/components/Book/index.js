@@ -1,7 +1,7 @@
 import React from "react";
 import { ListItem } from "../List";
 
-function Book({ title, subtitle, authors, link, description, image, Button }) {
+function Book({ title, authors, link, description, image, Button }) {
   return (
     <ListItem>
       <div className="row flex-wrap-reverse">
