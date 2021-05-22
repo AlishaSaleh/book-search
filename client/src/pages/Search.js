@@ -5,6 +5,7 @@ import API from "../utils/API";
 import Card from "../components/Card";
 import { List } from "../components/List";
 import Book from "../components/Book";
+import Footer from "../components/Footer";
 
 class Search extends Component {
     state = {
@@ -101,6 +102,9 @@ class Search extends Component {
                         </Card>
                     </div>
                 </div>
+                <br />
+                <br />
+                <Footer />
             </>
         )
     }

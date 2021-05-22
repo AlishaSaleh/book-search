@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Card from "../components/Card";
 import Book from "../components/Book";
-// import Footer from "../components/Footer";
+import Footer from "../components/Footer";
 import API from "../utils/API";
 import { List } from "../components/List";
 
@@ -30,6 +30,7 @@ class Saved extends Component {
 
     render() {
         return (
+            <>
             <div className="row justify-content-md-center">
                 <div className="col-md-8">
 
@@ -61,7 +62,10 @@ class Saved extends Component {
                     </Card>
                 </div>
             </div>
-            // <Footer />
+            <br />
+            <br />
+            <Footer />
+            </>
         );
     }
 }
