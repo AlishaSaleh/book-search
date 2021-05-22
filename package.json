@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
+  "engines": {
+    "node": "14.x"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -34,6 +37,5 @@
     "if-env": "^1.0.4",
     "mongoose": "^5.3.16",
     "react-bootstrap": "^1.6.0"
-  },
-  "homepage": "https://github.com/AlishaSaleh/book-search#readme"
+  }
 }
